@@ -1,11 +1,23 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <header>
-        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+<article id="post-<?php the_ID(); ?>" <?php post_class('blog-card'); ?>>
+    <header class="blog-card__header">
+        <?php if ( has_post_thumbnail() ) : ?>
+            <div class="blog-card__thumbnail">
+                <a href="<?php the_permalink(); ?>">
+                    <?php the_post_thumbnail('medium'); ?>
+                </a>
+            </div>
+        <?php endif; ?>
     </header>
-    <div>
-        <?php the_excerpt(); // Display the post excerpt ?>
+    <div class="blog-card__details">
+        <h2 class="blog-card__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+        <div class="blog-card__meta">
+            <span class="blog-card__meta-label"><?php the_category(', '); ?></span>
+            <span class="blog-card__meta-location">
+                <i class="fas fa-map-marker-alt"></i> Location Text
+            </span>
+            <span class="blog-card__meta-time">
+                <i class="fas fa-clock"></i> Fulltime
+            </span>
+        </div>
     </div>
-    <footer>
-        <a href="<?php the_permalink(); ?>">Read More</a>
-    </footer>
 </article>
