@@ -38,10 +38,13 @@ $categories = get_categories([
                 the_post();
                 include locate_template('partials/post.php');
             endwhile;
+            wp_reset_postdata();
+
         else :
             echo '<p class="text-center text-neutral-75">No posts found.</p>';
         endif;
         ?>
+        
     </div>
 </div>
 

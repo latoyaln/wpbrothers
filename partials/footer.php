@@ -47,16 +47,16 @@
       </div>
       <div class="footer__social-links">
         <a href="https://facebook.com" target="_blank" class="footer__social-link">
-          <i class="fas fa-facebook-f"></i>
+        <i class="fa-solid fa-facebook"></i>
         </a>
         <a href="https://instagram.com" target="_blank" class="footer__social-link">
-          <i class="fab fa-instagram"></i>
+          <i class="fas fa-instagram"></i>
         </a>
         <a href="https://linkedin.com" target="_blank" class="footer__social-link">
-          <i class="fab fa-linkedin-in"></i>
+          <i class="fas fa-linkedin-in"></i>
         </a>
         <a href="https://twitter.com" target="_blank" class="footer__social-link">
-          <i class="fab fa-twitter"></i>
+          <i class="fas fa-twitter"></i>
         </a>
       </div>
     </div>

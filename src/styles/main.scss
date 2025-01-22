@@ -90,10 +90,9 @@ p {
     padding: 40px;
   }
 
-
   &__left {
     text-align: left;
-    width: 30%;
+    width: 50%;
 
     @media (max-width: 900px){
       width: 100%;
@@ -101,7 +100,7 @@ p {
     }
 
     & .footer__logo {
-      width: 100%;
+      width: 50%;
       margin-bottom: 1rem;
 
       @media (max-width: 900px){
@@ -130,12 +129,19 @@ p {
   }
 
   &__right {
-    width: 65%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
+    
+    @media (max-width:900px){
+      display: block;
+      width: 100%;
+    }
+
     & .footer__column {
       width: 30%;
       margin-bottom: 20px;
+      margin-top: 3rem;
 
       &-heading {
         font-size: 18px;
@@ -170,8 +176,8 @@ p {
 
   &__bottom-bar {
     background-color: var(--cta-base);
-    padding: 10px 160px;
     color: var(--neutral-white);
+    padding: 40px;
 
     & .footer__bottom-container {
       display: flex;
@@ -191,7 +197,7 @@ p {
           transition: color 0.2s;
 
           &:hover {
-            color: var(--base-color-300);
+            color: var(--base-color-500);
           }
         }
       }
@@ -726,5 +732,45 @@ h3 a {
       max-height: 200px;
     }
   }
+}
+
+@media (max-width: 900px) {
+ 
+  #filters {
+    display: flex;
+    flex-direction: row; 
+    padding-top: 1rem;
+    align-items: center;
+    gap: 10px; 
+  }
+
+  #filters label {
+    font-size: var(--size-body-small); }
+
+  .sort {
+    font-size: var(--size-body-small); 
+  }
+
+  #sorter {
+    width: 100%; 
+    margin-top: 1rem;
+    padding: 10px; 
+    font-size: var(--size-body-small);
+  }
+ .flex.justify-between.items-center.mb-6 {
+  flex-direction: column; 
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.flex.items-center.space-x-4 {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flex.items-center.space-x-2 {
+  flex-direction: column;
+  gap: 10px;
+}
 }
 /*ARCHIVE-BLOG.PHP STYLING END*/
