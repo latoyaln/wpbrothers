@@ -542,6 +542,7 @@ p {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .blog-card__header {
@@ -554,6 +555,7 @@ p {
   height: auto;
   object-fit: cover;
   aspect-ratio: 1/1;
+  max-height: 300px;
 }
 
 .blog-card__details {
@@ -566,21 +568,17 @@ p {
   flex-grow: 1;
 }
 
-.blog-card__title {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
 h3 a {
   text-decoration: none;
   color: var(--font-color-head);
+  margin-bottom: 1rem;
 }
 
 .blog-card__meta {
-  margin-top: auto; /* Push meta content to the bottom */
+  margin-top: auto;
+  padding-top: 1rem;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   font-size: 14px;
   color: var(--font-color-body);
 }
@@ -604,10 +602,71 @@ h3 a {
 
 .blog-card__meta-location i,
 .blog-card__meta-time i {
-  padding-left: 15px;
+  padding-right: 2rem;
   color: var(--font-color-body);
 }
 
+#filters {
+  color: var(--font-color-body);
+  font-size: var(--size-body-base);
+  margin-top: 2rem;
+}
+
+#filters input[type=radio] {
+  appearance: none; /* Remove default styles */
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--base-color-500);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#filters input[type=radio]:checked {
+  border-color: var(--base-color-500);
+  background-color: var(--base-color-500);
+}
+
+.sort {
+  margin-top: 2rem;
+  font-size: var(--size-body-base);
+  color: var(--font-color-body);
+  font-weight: 700;
+}
+
+#sorter {
+  width: 200px;
+  margin-top: 2rem;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: var(--size-body-small);
+  color: var(--font-color-placeholder);
+  background-color: var(--neutral-white);
+  border: 1px solid var(--neutral-200);
+}
+
+#sorter option {
+  padding-left: 20px;
+}
+
+.solid {
+  border-top: 1px solid var(--neutral-400);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+  .blog-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .blog-card {
+    width: 100%; /* Ensure full-width cards on mobile */
+  }
+  .blog-card__thumbnail img {
+    max-height: 200px;
+  }
+}
 /*ARCHIVE-BLOG.PHP STYLING END*/
 
 /*# sourceMappingURL=style.css.map*/

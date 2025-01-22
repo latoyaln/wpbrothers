@@ -16,7 +16,7 @@
                 <i class="fas fa-map-marker-alt"></i> Location
             </span>
             <span class="blog-card__meta-time">
-                <i class="fas fa-clock"></i> Fulltime
+                <i class="fas fa-clock" style="margin-right: 1rem;"></i> Fulltime
             </span>
         </div>
     </div>
