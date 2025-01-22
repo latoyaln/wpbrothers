@@ -2,8 +2,9 @@
 <header class="header">
   <div class="header__container">
     <div class="header__logo">
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/wplogo.png" alt="Logo">
-    </div>
+    <a href="<?php echo home_url('/'); ?>">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/wplogo.png" alt="WP Brothers Logo">
+  </a>    </div>
 
     <button class="header__mobile-toggle" aria-label="Toggle menu">
       <span class="header__mobile-icon"> <i class="fa fa-bars" style="color: var(--base-color-500);"></i></span>

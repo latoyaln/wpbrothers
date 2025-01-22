@@ -39,27 +39,26 @@
   </div>
 
   <div class="footer__bottom-bar">
-  <div class="footer__bottom-container">
-    <div class="footer__bottom-links">
-      <a href="#" class="footer__bottom-link">Algemene voorwaarden</a>
-      <a href="#" class="footer__bottom-link">Privacy Statement</a>
-      <a href="#" class="footer__bottom-link">Toegankelijkheid</a>
-    </div>
-    <div class="footer__social-links">
-      <a href="https://facebook.com" target="_blank" class="footer__social-link">
-        <i class="fas f-brands fa-facebook"></i>
-      </a>
-      <a href="https://instagram.com" target="_blank" class="footer__social-link">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://linkedin.com" target="_blank" class="footer__social-link">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a href="https://twitter.com" target="_blank" class="footer__social-link">
-        <i class="fab fa-twitter"></i>
-      </a>
+    <div class="footer__bottom-container">
+      <div class="footer__bottom-links">
+        <a href="#" class="footer__bottom-link">Algemene voorwaarden</a>
+        <a href="#" class="footer__bottom-link">Privacy Statement</a>
+        <a href="#" class="footer__bottom-link">Toegankelijkheid</a>
+      </div>
+      <div class="footer__social-links">
+        <a href="https://facebook.com" target="_blank" class="footer__social-link">
+          <i class="fas fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="footer__social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="footer__social-link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="footer__social-link">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
     </div>
   </div>
-</div>
-
 </footer>

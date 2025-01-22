@@ -3,8 +3,8 @@
   <ul class="footer__links">
     <?php foreach ($links as $link): ?>
       <li>
-        <i class="fas fa-chevron-right"></i>
-        <p class="footer__label"><?php echo esc_html($link); ?></p>
+        <i class="fas fa-chevron-right" style="padding-right:1rem;"></i>
+        <span class="footer__label" ><?php echo esc_html($link); ?></span>
       </li>
     <?php endforeach; ?>
   </ul>
