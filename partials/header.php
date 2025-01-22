@@ -16,10 +16,9 @@
           <a href="/blog" class="header__nav-link">Blog</a>
         </li>
 
-        <!-- Dropdown -->
         <li class="header__nav-item header__nav-item--dropdown">
           <button class="header__nav-link header__dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-            Dropdown <i class="fa fa-arrow-down"></i>
+            Dropdown <i class="fa fa-chevron-down" style="color: var(--base-color-500);"></i>
           </button>
           <ul class="header__dropdown-menu">
             <li><a href="/link1" class="header__dropdown-item">Link 1</a></li>
@@ -28,15 +27,17 @@
           </ul>
         </li>
 
-        <!-- Search -->
         <li class="header__nav-item header__nav-item--search">
-          <button class="header__nav-link header__search-toggle">
-            <i class="fa fa-search"></i>
-          </button>
+          <div class="header__search">
+            <button class="header__search-btn">
+              <i class="fa fa-search" style="color: var(--base-color-500);"></i>
+            </button>
+            <input type="text" class="header__search-input" placeholder="Zoeken naar...." style="color: var(--font-color-placeholder);">
+          </div>
         </li>
 
         <li class="header__nav-item">
-          <a href="/login" class="header__nav-link header__nav-link--login">Log In</a>
+          <a href="mailto:contact@yourdomain.com" class="header__nav-link header__contact-btn">Contact</a>
         </li>
       </ul>
     </nav>

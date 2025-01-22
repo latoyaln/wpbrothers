@@ -1,5 +1,9 @@
+// Updated tailwind.config.js
 module.exports = {
   content: ["./**/*.{php,ts,js,twig}"],
+  corePlugins: {
+    preflight: false, // Disable preflight
+  },
   theme: {
     container: {
       center: true,
@@ -23,28 +27,8 @@ module.exports = {
       },
       font: {
         DEFAULT: "#191919",
-        darker: "#141414",
-      },
-      grey: {
-        DEFAULT: "#191919",
-        darker: "#141414",
-      },
-      message: {
-        DEFAULT: "#f8f8f8",
-        darker: "#dedede",
-        border: "#ededed",
-      },
-      succes: {
-        DEFAULT: "#3ca355",
-        2: "#e0f0e4",
-      },
-      warning: {
-        DEFAULT: "#f4a525",
-        2: "#fdf1dc",
-      },
-      error: {
-        DEFAULT: "#c84041",
-        2: "#f6e0e1",
+        body: "#344054",
+        placeholder: "#98A2B3",
       },
       neutral: {
         0: "#fff",
@@ -53,6 +37,10 @@ module.exports = {
         50: "#c2c8cf",
         75: "#686c73",
         100: "#353c45",
+      },
+      base: {
+        300: "#FFA370",
+        500: "#FF470B",
       },
       white: {
         DEFAULT: "#ffffff",
