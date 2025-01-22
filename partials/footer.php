@@ -12,32 +12,54 @@
     </div>
     
     <div class="footer__right">
-      <div class="footer__column">
-        <h3 class="footer__column-heading">Heading</h3>
-        <ul class="footer__links">
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
-      </div>
-      
-      <div class="footer__column">
-        <h3 class="footer__column-heading">Heading</h3>
-        <ul class="footer__links">
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
-      </div>
-      
-      <div class="footer__column">
-        <h3 class="footer__column-heading">Heading</h3>
-        <ul class="footer__links">
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
-      </div>
+      <?php
+        $footer_columns = [
+          [
+            'heading' => 'Heading',
+            'links'   => ['Label', 'Label', 'Label']
+          ],
+          [
+            'heading' => 'Heading',
+            'links'   => ['Label', 'Label', 'Label']
+          ],
+          [
+            'heading' => 'Heading',
+            'links'   => ['Label', 'Label', 'Label']
+          ],
+        ];
+
+        foreach ($footer_columns as $column) {
+          $heading = $column['heading'];
+          $links = $column['links'];
+
+          include 'footer-column.php';
+        }
+      ?>
     </div>
   </div>
+
+  <div class="footer__bottom-bar">
+  <div class="footer__bottom-container">
+    <div class="footer__bottom-links">
+      <a href="#" class="footer__bottom-link">Algemene voorwaarden</a>
+      <a href="#" class="footer__bottom-link">Privacy Statement</a>
+      <a href="#" class="footer__bottom-link">Toegankelijkheid</a>
+    </div>
+    <div class="footer__social-links">
+      <a href="https://facebook.com" target="_blank" class="footer__social-link">
+        <i class="fas f-brands fa-facebook"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="footer__social-link">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="footer__social-link">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank" class="footer__social-link">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
 </footer>
