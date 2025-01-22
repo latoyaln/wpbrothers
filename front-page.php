@@ -18,7 +18,7 @@ get_header();
                 </p>
             </div>
             <div class="home-page__hero-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/215d1c7002ed987517e77ded5f92d0e6489e9f01.jpg" alt="WordPress Tovenaar">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/7bf8b7439accaae1dbcb6690298ed5dd6b196eb0.jpg" alt="WP smiling at laptop">
             </div>
         </div>
     </section>
@@ -26,53 +26,78 @@ get_header();
     <!-- Section 2 -->
     <section class="home-page__features">
         <div class="container">
-            <h2 class="home-page__features-title">Herkenbaar?</h2>
-            <div class="home-page__features-grid">
-                <?php for ($i = 1; $i <= 4; $i++) : ?>
-                    <div class="feature-card">
-                        <i class="feature-card__icon fas fa-magic"></i>
-                        <h3 class="feature-card__title">Feature <?php echo $i; ?></h3>
-                        <p class="feature-card__description">
-                            Een korte beschrijving van deze feature. Maak het zo dynamisch mogelijk.
-                        </p>
-                    </div>
-                <?php endfor; ?>
+        <h2 class="home-page__features-title">Herkenbaar?</h2>
+         <div class="home-page__features-grid">
+            <?php
+            $features = [
+                [
+                    'icon_class' => 'fas fa-ruler-horizontal',
+                    'title' => 'Creatieve Probleemoplosser',
+                    'description' => 'Je bent in staat om met out-of-the-box oplossingen te komen voor complexe uitdagingen. Geen enkele bug is veilig voor jouw innovatieve aanpak!',
+                ],
+                [
+                    'icon_class' => 'fas fa-video',
+                    'title' => 'Koning(in) van de Plugins',
+                    'description' => 'Je hebt uitgebreide kennis van zowel populaire als obscure plugins en weet precies welke te gebruiken om een website naar een hoger niveau te tillen.',
+                ],
+                [
+                    'icon_class' => 'fas fa-columns',
+                    'title' => 'Flexibele Teamspeler',
+                    'description' => 'Je werkt net zo goed zelfstandig als in een team. Samenwerken met designers, marketeers en andere developers is voor jou een tweede natuur.',
+                ],
+                [
+                    'icon_class' => 'fas fa-pencil-alt',
+                    'title' => 'Nieuwsgierige Learner',
+                    'description' => 'Je bent altijd op de hoogte van de laatste trends en ontwikkelingen binnen de WordPress-community en past deze kennis toe in je werk.',
+                ],
+            ];
+
+            foreach ($features as $feature) {
+                $icon_class = $feature['icon_class'];
+                $title = $feature['title'];
+                $description = $feature['description'];
+
+                include locate_template('partials/feature-card.php');
+            }
+            ?>
             </div>
         </div>
     </section>
+
 
     <!-- Section 3 -->
-    <section class="home-page__cta">
-        <div class="container home-page__cta-container">
-            <div class="home-page__cta-content">
-                <h2 class="home-page__cta-title">Over Ons</h2>
-                <p class="home-page__cta-description">
-                    Sluit je aan bij ons team en ontdek een wereld vol kansen en creatieve projecten.
+    <section class="home-page__content">
+        <div class="container home-page__content-container">
+            <div class="home-page__content-text">
+                <p class="home-page__hero-subtitle">Over Ons</p>
+                <h2 class="home-page__content-title">Waarom WP Brothers?</h2>
+                <p class="home-page__content-description">
+                    Bij WP Brothers draait alles om creativiteit, innovatie en samenwerking. Wij zijn een dynamisch team van WordPress fanaten die de grenzen van webontwikkeling opzoeken en verleggen. Werken bij ons betekent deel uitmaken van een hechte familie die samenwerkt om de beste WordPress-oplossingen te bieden aan onze klanten.
                 </p>
-                <a href="#" class="home-page__cta-button">Join Us</a>
+                <a href="#" class="home-page__content-button">Over Ons</a>
             </div>
-            <div class="home-page__cta-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cta-image.jpg" alt="Avontuur">
+            <div class="home-page__content-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2cbdc7b29b8b729db1b0ad933d96d3cbc1f83268.jpg" alt="Over Ons foto">
             </div>
         </div>
     </section>
 
-    <!-- Section 4 -->
-    <section class="home-page__cta home-page__cta--reversed">
-        <div class="container home-page__cta-container">
-            <div class="home-page__cta-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/reversed-cta.jpg" alt="Creativiteit">
-            </div>
-            <div class="home-page__cta-content">
-                <h2 class="home-page__cta-title">Word een WordPress meester!</h2>
-                <p class="home-page__cta-description">
-                    Duik diep in de wereld van WordPress en breng jouw unieke ideeën tot leven.
+    <section class="home-page__content">
+        <div class="container home-page__content-container">
+              <div class="home-page__content-image">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/09430a3f35a25fe2ba038840a7d4b99ba6e39942.jpg" alt="Creativiteit">
+              </div>
+            <div class="home-page__content-text">
+                <p class="home-page__hero-subtitle">Solliciteren</p>
+                <h2 class="home-page__content-title">Sluit je aan bij WP Brothers!</h2>
+                <p class="home-page__content-description">
+                Als je klaar bent om je carrière naar een hoger niveau te tillen en deel wilt uitmaken van een team dat streeft naar uitmuntendheid, dan is WP Brothers de plek voor jou. We zijn altijd op zoek naar getalenteerde WordPress developers die onze passie voor webontwikkeling delen. Kom en ontdek waarom werken bij WP Brothers niet zomaar een baan is, maar een avontuur vol kansen en groei.
                 </p>
-                <a href="#" class="home-page__cta-button">Leer Meer</a>
+                <a href="#" class="home-page__content-button">Over Ons</a>
             </div>
         </div>
     </section>
-
+    
     <!-- Section 5 -->
     <section class="home-page__blog">
         <div class="container">
