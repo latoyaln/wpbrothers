@@ -421,7 +421,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 40px;
   height: 100vh;
 }
 @media (max-width: 900px) {
@@ -432,7 +432,7 @@ p {
     height: 100%;
   }
 }
-.home-page__content-description {
+.home-page__hero-description, .home-page__content-description {
   padding-bottom: 2rem;
   padding-top: 1rem;
 }
@@ -446,18 +446,32 @@ p {
 .home-page__hero-content, .home-page__content-text {
   flex: 1 1 50%;
   text-align: left;
+  padding-right: 1rem;
+}
+@media (max-width: 900px) {
+  .home-page__hero-content, .home-page__content-text {
+    padding-right: 0;
+  }
 }
 .home-page__hero-subtitle {
   font-size: var(--size-body-large);
   color: var(--base-color-500);
+  margin-bottom: 1rem;
 }
 .home-page__hero-image, .home-page__content-image {
   flex: 1 1 50%;
+  padding-left: 1rem;
+}
+@media (max-width: 900px) {
+  .home-page__hero-image, .home-page__content-image {
+    padding-left: 0;
+  }
 }
 .home-page__hero-image img, .home-page__content-image img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 10px;
 }
 .home-page__features {
   padding: 60px 20px;
