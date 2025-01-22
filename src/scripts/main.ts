@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("DOM Loaded");
 });
 
-// This script will handle the mobile menu toggle
+
 document.addEventListener('DOMContentLoaded', function() {
   const mobileToggleButton = document.querySelector('.header__mobile-toggle');
   const headerNav = document.querySelector('.header__nav');
@@ -16,3 +16,5 @@ document.addEventListener('DOMContentLoaded', function() {
     mobileToggleButton.classList.toggle('active');
   });
 });
+
+

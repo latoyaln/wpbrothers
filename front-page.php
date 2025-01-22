@@ -4,7 +4,6 @@ get_header();
 ?>
 
 <div class="home-page">
-    <!-- Section 1 -->
     <section class="home-page__hero">
         <div class="container home-page__hero-container">
             <div class="home-page__hero-content">
@@ -26,7 +25,7 @@ get_header();
     <!-- Section 2 -->
     <section class="home-page__features">
         <div class="container">
-        <h2 class="home-page__features-title">Herkenbaar?</h2>
+        <h2>Herkenbaar?</h2>
          <div class="home-page__features-grid">
             <?php
             $features = [
@@ -64,7 +63,6 @@ get_header();
         </div>
     </section>
 
-
     <!-- Section 3 -->
     <section class="home-page__content">
         <div class="container home-page__content-container">
@@ -74,7 +72,7 @@ get_header();
                 <p class="home-page__content-description">
                     Bij WP Brothers draait alles om creativiteit, innovatie en samenwerking. Wij zijn een dynamisch team van WordPress fanaten die de grenzen van webontwikkeling opzoeken en verleggen. Werken bij ons betekent deel uitmaken van een hechte familie die samenwerkt om de beste WordPress-oplossingen te bieden aan onze klanten.
                 </p>
-                <a href="#" class="home-page__content-button">Over Ons</a>
+                <a href="#" class="home-page__content-button">Over Ons <i class="fa fa-chevron-right" style="color: var(--base-color-500); font-size: var(--size-body-small); padding-left: 6px;" ></i></a>
             </div>
             <div class="home-page__content-image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2cbdc7b29b8b729db1b0ad933d96d3cbc1f83268.jpg" alt="Over Ons foto">
@@ -93,19 +91,17 @@ get_header();
                 <p class="home-page__content-description">
                 Als je klaar bent om je carrière naar een hoger niveau te tillen en deel wilt uitmaken van een team dat streeft naar uitmuntendheid, dan is WP Brothers de plek voor jou. We zijn altijd op zoek naar getalenteerde WordPress developers die onze passie voor webontwikkeling delen. Kom en ontdek waarom werken bij WP Brothers niet zomaar een baan is, maar een avontuur vol kansen en groei.
                 </p>
-                <a href="#" class="home-page__content-button">Over Ons</a>
+                <a href="#" class="home-page__content-button">Werken bij</a>
             </div>
         </div>
     </section>
     
-    <!-- Section 5 -->
     <section class="home-page__blog">
-        <div class="container">
-            <h2 class="home-page__blog-title">Laatste Blogs</h2>
-            <div class="home-page__blog-grid">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <?php
                 $recent_posts = new WP_Query([
-                    'post_type' => 'post',
+                    'post_type' => 'blog',
                     'posts_per_page' => 3,
                 ]);
 
