@@ -1,5 +1,4 @@
 <?php defined('ABSPATH') || exit('Forbidden'); ?>
-
 <header class="header">
   <div class="header__container">
     <div class="header__logo">
@@ -7,7 +6,7 @@
     </div>
 
     <button class="header__mobile-toggle" aria-label="Toggle menu">
-      <span class="header__mobile-icon"></span>
+      <span class="header__mobile-icon"> <i class="fa fa-bars" style="color: var(--base-color-500);"></i></span>
     </button>
 
     <nav class="header__nav">
@@ -17,7 +16,7 @@
         </li>
 
         <li class="header__nav-item header__nav-item--dropdown">
-          <button class="header__nav-link header__dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+          <button class="header__nav-link header__dropdown-toggle" aria-haspopup="true">
             Dropdown <i class="fa fa-chevron-down" style="color: var(--base-color-500);"></i>
           </button>
           <ul class="header__dropdown-menu">
@@ -43,5 +42,6 @@
     </nav>
   </div>
 </header>
+
 
 <main>
