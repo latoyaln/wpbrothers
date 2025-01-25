@@ -1,7 +1,30 @@
 # Social Brothers WordPress Case - Latoya
 
-This repository contains my solution for the Social Brothers WordPress Developer interview case. The goal of this case is to showcase my abilities in WordPress, PHP, JavaScript (or TypeScript), (S)CSS, and Tailwind development by building a fully functioning, responsive website based on the provided design and technical specifications.
+This repository contains my solution for the [Social Brothers Developer](https://github.com/WP-Brothers/wpb-case-pub) interview case. The goal of this case is to showcase my abilities in WordPress, PHP, JavaScript (or TypeScript), (S)CSS, and Tailwind development by building a fully functioning, responsive website based on the provided design and technical specifications.
 
+## Case Requirements
+
+**General**
+
+- Do not use any plugins
+- Build upon the existing file structure and files.
+- Try to write your own code as much as possible.
+- We encourage writing component based code! This means reusing similar code, instead of writing the same functionality multiple times.
+- Seperate presentation and logic in your code from each other as much as possible
+
+**Design**
+
+- Recreate the [design](https://www.figma.com/design/w5SUZpNGiXOKgJZ3FdAyhh/WP-Brothers---Development-case?node-id=2003-18423&m=dev) pixel perfect as a fully working website.
+- Make sure the website is fully responsive on mobile and tablet devices
+- The mobile menu must be collapsible
+- The header must be fixed on mobile
+  
+**Scripting and styling**
+
+- Do not use jQuery. Write vanilla JavaScript or TypeScript (optional).
+- Write your styling using Tailwind classes, or with SCSS/CSS using the BEM (Block Element Modifier) naming methodology.
+- If you are not using Tailwind, Bootstrap is available for responsive classes (see Already Included)).
+  
 ## What was done?
 
 **General Overview**
